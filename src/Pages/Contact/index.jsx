@@ -1,5 +1,5 @@
 export default function index() {
   return (
-    <div>index</div>
+    <div>Contact me</div>
   )
 }
