@@ -1,0 +1,100 @@
+.Home {
+  min-height: 100vh;
+  background-image: url("/src/img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hello {
+  color: #17c3b2;
+  padding-top: 8rem;
+  margin-left: 6rem;
+}
+.myName {
+  color: white;
+  font-size: 5rem;
+  margin-left: 5rem;
+}
+.homeBtn {
+  margin-left: 8rem;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #17c3b2;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #17c3b2;
+  background-color: rgb(33, 37, 41);
+}
+
+.homeBtn:hover {
+  color: rgb(33, 37, 41);
+  transform: scale(1.1);
+  outline: 2px solid #17c3b2;
+  box-shadow: 4px 5px 17px -4px #17c3b2;
+}
+
+.homeBtn::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #17c3b2;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.homeBtn:hover::before {
+  width: 250%;
+}
+@media(max-width: 768px) {
+  .Home {
+    min-height: 95vh;
+  }
+  .hello {
+    color: #17c3b2;
+    padding-top: 4rem;
+    margin-left: 3rem;
+  }
+  .myName {
+    color: white;
+    font-size: 3rem;
+    margin-left: 3rem;
+  }
+  .homeBtn {
+    margin-left: 4rem;
+    padding: 1em 2em;
+    font-size: 12px;
+
+  }
+}
+@media(max-width: 426px) {
+  .Home {
+    min-height: 95vh;
+  }
+  .hello {
+    color: #17c3b2;
+    padding-top: 4rem;
+    margin-left: 1.5rem;
+  }
+  .myName {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  .homeBtn {
+    margin-left: 2rem;
+    padding: 1em 2em;
+    font-size: 10px;
+
+  }
+}
